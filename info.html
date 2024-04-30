@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Erblin Zeqiri - Web Developer</title>
+</head>
+<body>
+
+    <div class="tableau">
+        <div class="colonne colonne1">
+            <div class="stImage">
+                <a href="index.html">
+                    <img src="images/ez-hover.png" alt="Image 1" class="ez" >
+                </a>
+            </div>
+            <div class="otherimgs">
+                <a href="index.html" class="image">
+                    <img src="images/profil_icon.png" alt="profil_icon" class="image iconHover">
+                </a>
+                <a href="experience.html" class="image">
+                    <img src="images/exp.png" alt="exp" class="image iconHover">
+                </a>
+                <a href="competences.html" class="image">
+                    <img src="images/competences.png" alt="competences" class="image iconHover">
+                </a>
+                <a href="work.html" class="image">
+                    <img src="images/work.png" alt="work" class="image iconHover">
+                </a>
+                <a href="info.html" class="image">
+                    <img src="images/info_icon.png" alt="info_icon" class="image iconHover">
+                </a>
+            </div>
+        </div>
+        <div class="colonne colonne2">
+            <img src="images/pawel-czerwinski-APJtnTolIMs-unsplash.png" alt="Image" class="image-colonne">
+        </div>
+        <div class="colonne colonne3">
+            <div class="contenu-interne">
+                <span class="title-and-subtitle">
+                    <a class="title">Me contacter</a>
+                </span>
+                <form class="row g-3" action="send_form.php" method="POST">
+                    <div class="col-md-6">
+                      <label for="name" class="form-label">Nom</label>
+                      <input type="text" class="form-control bg-transparent border border-dark text-secondary" id="name">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="forname" class="form-label">Prénom</label>
+                      <input type="text" class="form-control bg-transparent border border-dark text-secondary" id="forname">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputEmail4" class="form-label">Email</label>
+                      <input type="email" class="form-control bg-transparent border border-dark text-secondary" id="inputEmail4">
+                    </div>
+                    <div class="col-12">
+                      <label for="org" class="form-label">Organisation</label>
+                      <input type="text" class="form-control bg-transparent border border-dark text-secondary" id="org">
+                    </div>
+                    <div class="col-12">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control bg-transparent border border-dark text-secondary" style="height: 200px" id="message"></textarea>                      
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-outline-secondary">Envoyer le message</button>
+                    </div>
+                </form>
+            </div>                                
+        </div>               
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

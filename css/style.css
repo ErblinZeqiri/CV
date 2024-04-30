@@ -1,0 +1,144 @@
+body {   
+  /*background-image: url('/images/blurry-gradient-haikei2.svg');*/
+  background-image: radial-gradient(circle, #3c0095 2%, #000000 61%);
+  background-size: 100% 100%; /* Ajuste l'image à la taille de la page */
+  background-position: center; /* Centre l'image */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  height: 100vh; /* Occupe toute la hauteur de la fenêtre */
+}
+
+.tableau {
+  background-color: #2B3035 !important;
+  width: 1300px;
+  height: 800px; /* Hauteur du tableau */
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  box-shadow:  -10px 10px 20px #000000,
+               10px -10px 20px #202528;
+}
+
+.colonne {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.colonne1 {
+  width: 107px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stImage{
+  margin-top: 21px;
+  margin-bottom: auto;
+  z-index: 1;
+}
+
+.otherimgs {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: auto;
+  z-index: 0;
+}
+
+/* Dimensions spécifiques pour la première image */
+.ez {
+  width: 60.51px;
+  height: 32px;
+}
+
+.image{
+  margin-bottom: 15px; /* Espacement entre chaque image */
+  width: 45px;
+  height: 45px;
+}
+
+.colonne2 {
+  width: 307px;
+  position: relative;
+}
+
+.image-colonne {
+  width: 100%; /* Pour que l'image remplisse la largeur de la colonne */
+  height: calc(100% + 50px); /* Pour maintenir le rapport hauteur/largeur */
+  object-fit: cover; /* Pour rogner l'image */
+  margin-top: -10px; /* Marge négative pour dépasser la colonne en haut */
+  margin-bottom: -10px; /* Marge négative pour dépasser la colonne en bas */
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Ajoute une ombre */
+}
+
+.colonne3 {
+  flex-grow: 1;
+  min-width: 886px;
+  position: relative;
+}
+
+.contenu-interne {
+  width: 800px;
+  height: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.contenu-interne .title {
+  font-size: 48px;
+  color: #F4F5E3;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  margin-bottom: 20px;
+  margin-top: 20px; /* Marge en haut */
+  margin-left: 20px; /* Marge à gauche */
+}
+
+.contenu-interne .subtitle {
+  font-size: 20px;
+  color: #5b45ac;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  margin-top: 20px; /* Marge en haut */
+  margin-left: 20px; /* Marge à gauche */
+}
+
+.contenu-interne .separator::after {
+  content: ' / ';
+  color: #8d8c8c; /* Couleur pour le caractère "/" */
+}
+
+.contenu-interne .content{
+  margin-top: 50px !important;
+  font-size: 25px;
+  color: #8d8c8c;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  margin:20px;
+  text-align: justify;
+}
+
+.contenu-interne .row {
+  margin: 30px;
+}
+
+.contenu-interne .form-label {
+  color: #8d8c8c;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;  
+}
